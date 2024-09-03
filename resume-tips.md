@@ -1,0 +1,11 @@
+- Do not comment on your previous boss' questionable parentage.
+- Do not list jobs you've held in previous lives.
+- Do not include your [jail] cell number in your address.
+- Do not provide the URL of your homepage on geocities.
+- Do not dot the 'i's with hearts.
+- D0 n07 u53 inph0rm41 14ngu4g3.
+- Do not write using crayons.
+- Do not list your astrological sign or planet of origin.
+- Do not list alternate personalities as character references.
+- Do not ever reveal that you are an MCSE.
+

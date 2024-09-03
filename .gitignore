@@ -1,0 +1,14 @@
+*.7z
+*.gz
+*.lock
+*.log
+*.o
+*.out
+*.pid
+*.so
+*.swp
+*.tar
+*~
+.completer.hist
+x
+
