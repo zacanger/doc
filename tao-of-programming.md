@@ -580,5 +580,3 @@ Thus spake the master programmer:
 
 “It is time for you to leave.”
 
-[home](http://mdkb.zacanger.com/)
-

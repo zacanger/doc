@@ -4,7 +4,6 @@
   * `alias cheatsheet="less ~path/to/cheatsheet.md`
 * get external ip:
   * `curl http://ipecho.net/plain`
-  * Or, this oneliner (put in an alias): `wget -q -O - http://zacanger.com/ip && echo " "`
 * Getting Help:
   * View the manual for a command: `man command`
   * Get help without using `man`: `command --help` (or, frequently, `command -h`)
@@ -67,7 +66,7 @@
         * `pip freeze -E dirname > requirements.txt` exports venv info into shareable format
         * `pip install -r requirements.txt` installs from `requirements.txt`
         * `pip install -E dirname -r requirements.txt` imports venv from `requirements.txt`
-    * [Node (NPM)](https://github.com/zacanger/cheat-sheets-etc/blob/master/npm.md)
+    * [Node (NPM)](https://github.com/zautumnz/docs/blob/master/npm.md)
 * Basic commands:
   * `thing | less` views the output of `thing` in a paged format
     * `less filename` views that filename in a paged format
@@ -156,7 +155,7 @@
   * `traceroute ipaddress` views the full network route to `ipaddress`
   * `iptables -L` shows firewall rules
   * `nmap localhost` shows open ports on `localhost`
-  * `wget http://zacanger.com/` downloads `http://zacanger.com/`
+  * `wget http://example.com/` downloads `http://example.com/`
     * `wget -c` completes a partial download
     * `-b` runs in the background
     * `-ftp-user=username --ftp-password=password ftp://example.com/directory/file` downloads over FTP
@@ -224,9 +223,9 @@
       * Cloning from Github with the shorthand `hub clone user/repo`
       * <https://github.com/github/hub/releases>
       * or, `brew install hub` (on a Mac)
-  * See my [.gitignore_global](https://github.com/zacanger/z/blob/master/.gitignore_global)
-  * See my [.gitconfig](https://github.com/zacanger/z/blob/master/.gitconfig)
-  * [Much, much more](https://github.com/zacanger/cheat-sheets-etc/blob/master/git.md)
+  * See my [.gitignore_global](https://github.com/zautumnz/z/blob/master/.gitignore_global)
+  * See my [.gitconfig](https://github.com/zautumnz/z/blob/master/.gitconfig)
+  * [Much, much more](https://github.com/zautumnz/docs/blob/master/git.md)
 * MySQL:
   * `help`
   * `show database` shows databases

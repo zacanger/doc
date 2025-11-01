@@ -78,7 +78,7 @@ displayed. The value can be one of `arrayBuffer()`, `blob()`, `formData()`,
 `json()` and `text()`.
 
 ```javascript
-fetch('http://zacanger.com')
+fetch('http://example.com')
   .then((res) => res.text())
   .then((a) => console.log(a))
 ```

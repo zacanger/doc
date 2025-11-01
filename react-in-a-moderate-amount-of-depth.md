@@ -18,7 +18,7 @@ React DOM:
 
 ```js
 ReactDOM.render(
-  React.createElement(Link, {name: 'zacanger.com'}),
+  React.createElement(Link, {name: 'example.com'}),
   document.getElementById('menu')
 )
 ```
@@ -27,7 +27,7 @@ ReactDOM.render(
 
 ```js
 ReactDOM.render(
-  <Link name='zacanger.com'/>,
+  <Link name='example.com'/>,
   document.getElementById('menu')
 )
 ```
@@ -36,8 +36,8 @@ ReactDOM.render(
 
 ```js
 var ReactDOMServer = require('react-dom/server')
-ReactDOMServer.renderToString(Link, {name: 'zacanger.com'})
-ReactDOMServer.renderToStaticMarkup(Link, {name: 'zacanger.com'})
+ReactDOMServer.renderToString(Link, {name: 'example.com'})
+ReactDOMServer.renderToStaticMarkup(Link, {name: 'example.com'})
 ```
 
 
@@ -101,7 +101,7 @@ var Link = React.createClass ({
       'a',
       {className: 'btn', href: '#', title: this.props.name, onClick: this.tick.bind(this)},
       'Click ->',
-      (this.props.name? this.props.name : 'zacanger.com'),
+      (this.props.name? this.props.name : 'example.com'),
       ' (Clicked: '+this.state.count+')'
     )
   }
@@ -125,7 +125,7 @@ var Link = React.createClass ({
   render: function() {
     return (
       <a onClick={this.tick.bind(this)} href="#" className="btn" title={this.props.name}>
-        Click -> {(this.props.name? this.props.name : 'zacanger.com')}
+        Click -> {(this.props.name? this.props.name : 'example.com')}
         (Clicked: {this.state.count})
       </a>
     )
@@ -147,7 +147,7 @@ export class Link extends React.Component {
   render() {
     return (
       <a onClick={this.tick.bind(this)} href="#" className="btn" title={this.props.name}>
-        Click -> {(this.props.name? this.props.name : 'zacanger.com')}
+        Click -> {(this.props.name? this.props.name : 'example.com')}
         (Clicked: {this.state.count})
       </a>
     );

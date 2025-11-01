@@ -3,8 +3,8 @@
 It's not a great editor. But I know a lot of folks just don't have the time to get comfortable with vi/vim.
 If that's you, and you need to be in a terminal-only situation, just use Nano. It's there. It's easy.
 Here are some things to make it easier.
-(Also, definitely grab my [.nanorc](https://github.com/zacanger/z/blob/master/.nanorc_) and these
-[syntax highlighting files](https://github.com/zacanger/z/tree/master/.nano) to make your Nano experience
+(Also, definitely grab my [.nanorc](https://github.com/zautumnz/z/blob/master/.nanorc_) and these
+[syntax highlighting files](https://github.com/zautumnz/z/tree/master/.nano) to make your Nano experience
 a little less gross and bland!)
 
 * Files

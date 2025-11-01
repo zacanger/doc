@@ -69,7 +69,7 @@ sh
     # the other end
     $ mkfifo pipe
     $ cat < pipe > output
-    $ curl http://zacanger.com > pipe
+    $ curl http://example.com > pipe
 
     # follow logs as they grow
     $ tail -r <file>

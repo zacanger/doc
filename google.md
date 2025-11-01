@@ -36,9 +36,9 @@ be the most useful.
     `+and` would force inclusion of that word.
   * `biscuits +and tea`
 * Search in site: `site:`
-  * `vim site:blog.zacanger.com`
+  * `in site:example.com`
 * Find links to a site: `link:`
-  * `link:zacanger.com`
+  * `link:example.com`
 * Search for text in titles of pages:
   * `intitle:`
   * `allintitle:`
@@ -61,9 +61,9 @@ be the most useful.
 * Find in social media: `@`
   * `@twitter vim`
 * Show cached version: `cache:`
-  * `cache:zacanger.com`
+  * `cache:example.com`
 * Show info about a site: `info:`
-  * `info:zacanger.com`
+  * `info:example.com`
 * Around: `AROUND()`
   * Proximity to other terms
   * `unicode AROUND(3) xterm`

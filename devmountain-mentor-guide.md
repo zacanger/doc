@@ -45,7 +45,7 @@ Let's go over your duties in the context of a typical day in the Immersive class
 
 During the toy problem portion, you need to be ready to present the problem as well as walk students through the solution.
 If scheduled toy problems don't suit your mentor group on some particular day, please find one to use.
-[Try this repo](https://github.com/zacanger/pineapple-curry).
+[Try this repo](https://github.com/zautumnz/pineapple-curry).
 
 It's possible that you'll have some down time during lectures. This time is usually best spend reviewing upcoming
 curriculum and/or projects. **It's very important that you stay at least a couple days ahead of students as you review

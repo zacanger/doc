@@ -30,7 +30,7 @@ apt-get install dwb
 
 # Add a user to the sudo group
 # User must logout and login to take effect
-adduser zacanger sudo
+adduser foo sudo
 
 # Show type of video card system has
 lspci -v | grep VGA

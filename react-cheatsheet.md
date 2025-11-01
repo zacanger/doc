@@ -44,9 +44,9 @@ var Info = React.createClass({
   this.props.fullscreen //=> true
 
 // state
-  this.setState({ username: 'zacanger' })
+  this.setState({ username: 'foo' })
   this.replaceState({ ... })
-  this.state.username //=> 'zacanger'
+  this.state.username //=> 'foo'
 ```
 
 ```js

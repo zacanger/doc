@@ -44,7 +44,7 @@ If you need https, [read this](https://www.digitalocean.com/community/tutorials/
     `apt update ; apt full-upgrade -y --allow-unauthenticated --fix-missing`.
 * `apt-get install` anything else you might need. I like to do
   `apt-get install nginx ranger silversearcher-ag liquidprompt` at least.
-* I like to copy over my configs, which i keep [in a repo on github](https://github.com/zacanger/z),
+* I like to copy over my configs, which i keep [in a repo on github](https://github.com/zautumnz/z),
   so it's as easy as cloning that repo down. Then you just need to reload the shell, so `. ~/.bash_profile` or `. ~/.bashrc`.
 * You may want to add a non-root user. That's up to you and/or your team. That'd be `adduser username groupname`.
   * If you do this, do some research first on managing user permissions on Linux! At the very least you'll want to add
@@ -101,7 +101,7 @@ vi config.js
 * You can use nano if you'd like instead of vi. or, `npm i -g hipper` and use a more friendly terminal-based
   text editor! (Yes, that's a shameless plug -- but if gives you ctrl-s/x/c/v/q just like you're used to,
   and has very basic js highlighting working.)
-  * If you use nano, you may find [this cheatsheet](https://github.com/zacanger/doc/blob/master/nano.md) useful.
+  * If you use nano, you may find [this cheatsheet](https://github.com/zautumnz/doc/blob/master/nano.md) useful.
 * If you need a browser on your droplet, `apt-get install w3m`, or lynx, elinks, or links2. I recommend
   w3m over the others, though.
 * `pm2` is a lot more powerful than forever. Its documentation is extensive. Check it out.
@@ -154,22 +154,7 @@ swapon /swapfile
 * To set up subdomains:
   * Add an A-record like `A | sub | 123.456.789.0`
   * Add a CNAME like `CNAME | *.sub | sub.yourdomain.com.`
-* Here's an example Zone File (should show at the bottom of the domain management page):
-
-```
-$ORIGIN zacanger.com.
-$TTL 1800
-zacanger.com. IN SOA ns1.digitalocean.com. hostmaster.zacanger.com. 1461890554 10800 3600 604800 1800
-zacanger.com. 1800 IN NS ns1.digitalocean.com.
-zacanger.com. 1800 IN NS ns2.digitalocean.com.
-zacanger.com. 1800 IN NS ns3.digitalocean.com.
-zacanger.com. 1800 IN A 162.243.49.187
-mdkb.zacanger.com. 1800 IN A 162.243.49.187
-*.mdkb.zacanger.com. 1800 IN CNAME mdkb.zacanger.com.
-*.zacanger.com. 1800 IN CNAME zacanger.com.
-blueprint.zacanger.com. 1800 IN A 162.243.49.187
-*.blueprint.zacanger.com. 1800 IN CNAME blueprint.zacanger.com.
-```
+* Here's an example Zone File (should show at the bottom of the domain management page)
 
 --------
 
@@ -221,7 +206,7 @@ server {
 ```
 server {
     listen 80;
-    server_name zacanger.com;
+    server_name example.com;
     location / {
         proxy_pass http://127.0.0.1:2000;
         proxy_http_version 1.1;
@@ -233,13 +218,13 @@ server {
 }
 
 server {
-    server_name www.zacanger.com;
-    return 301 $scheme://zacanger.com$request_uri;
+    server_name www.example.com;
+    return 301 $scheme://example.com$request_uri;
 }
 
 server {
     listen 80;
-    server_name mdkb.zacanger.com;
+    server_name mdkb.example.com;
     location / {
         proxy_pass http://127.0.0.1:3000;
         proxy_http_version 1.1;
@@ -252,7 +237,7 @@ server {
 
 server {
     listen 80;
-    server_name blueprint.zacanger.com;
+    server_name blueprint.example.com;
     location / {
         proxy_pass http://127.0.0.1:4000;
         proxy_http_version 1.1;
@@ -350,4 +335,4 @@ deb http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
 # deb-src http://ppa.launchpad.net/ubuntu-lxc/lxd-stable/ubuntu yakkety main
 ```
 
-For the curious, here's [my full list](https://github.com/zacanger/z/blob/master/sources.more.list).
+For the curious, here's [my full list](https://github.com/zautumnz/z/blob/master/sources.more.list).
